@@ -17,7 +17,7 @@ You will be making a prototype till system for a new Dublin cafe called [Cafe Ru
 - Start with a blank sketch. Set the drawing window size to be 800 x 600.
 - Name the sketch CafeRubis and commit it to a new, public git repository called CafeRubis under your own GitHub account.
 - Put your name and student number into the sketch comments.
-- Download [this CSV file](HabHYG15ly.csv) to the data folder of your sketch folder. The file contains data on the products that Cafe Rubis sells.
+- Download [this CSV file](cafe.csv) to the data folder of your sketch folder. The file contains data on the products that Cafe Rubis sells.
 
 - Create a class called ```Product``` with a field for name of type String and a field for price of type float
 - Write a constructor on the Product class that takes a ```TableRow``` as a parameter and assigns the fields in the class from the appropriate columns in the ```TableRow```. You might want to look at [this page from the Processing reference](https://processing.org/reference/TableRow.html) if you need to know how a ```TableRow``` works.
