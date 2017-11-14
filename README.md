@@ -4,7 +4,7 @@
 - This is an open book test. You can use any of your own sketches, any of the examples from [the course website](https://github.com/skooter500/OOP-2017-2018) or the [Processing reference](https://processing.org/reference/) during the test.
 - No conferring or collaboration.
 - No use of Google, Facebook or any any other web resources permitted.
-- There are marks going for correct use of git, but I recommend that you save regularly and also submit a zipped copy of your test through websourses when you are finished just to be safe.
+- There are marks going for correct use of git, so make sure and save your work and commit regularly.
 
 ## Instructions
 
@@ -23,11 +23,11 @@ In today's lab test, you will be making a prototype till system for a new Dublin
 - Declare two global ```ArrayList```s of ```Product``` objects and call them ```products``` and ```bill```.
 - Write a function called ```loadData``` that loads the data from the file and populates the products ```ArrayList```.Call this from ```setup```.
 - Write a function called ```printProducts``` that prints the contents of the ```ArrayList``` after it has been loaded. You should make a ```toString``` method on the ```Product``` class to help you do this. Call this from setup after you load the data to make sure the file gets loaded correctly.
-- Write a function called ```drawProducts``` that draws the product menu that can be seen on the left side of the screen. You can use the function [```nf```]() to format the price to two decimal places. You can use the function [```textAlign```]() to align text to the left or right. You should try and write your code so that the menu gets displayed correctly if the screen was to change size or more products were added.
+- Write a function called ```displayProducts``` that displays the product menu that can be seen on the left side of the screen. You can use the function [```nf```](https://processing.org/reference/nf_.html) to format the price to two decimal places. You can use the function [```textAlign```](https://processing.org/reference/textAlign_.html) to align text to the left or right. You should write your code so that the menu gets displayed correctly even if the screen was to change size or if more products were added.
 - Write code for the ```mousePressed``` function that allows the user to click on a product and have it added to the ```bill``` ArrayList.
-- Write code for a function called ```drawBill``` that draws the bill to the screen as per the video. 
+- Write code for a function called ```displayBill``` that draws the bill to the screen as per the video.
 
-Submit the URL of your git repository [here](https://docs.google.com/forms/d/e/1FAIpQLScZev4_Rlk43RelrMRNHAYPfHAS8gmkKgNn3SnjoRUjxNDodA/viewform). You can also upload a zip file to Webcourses as a backup. I'll check here if I have problems with your git repository.
+Submit the URL of your git repository [here](https://docs.google.com/forms/d/e/1FAIpQLSexOO73umjdfvfzgd7aEAEkOQ-bXGCXkjnX7x5pif9tVSYyxA/viewform). *You can also upload a zip file to Webcourses as a backup* I'll check webcourses if I have problems with your git repository.
 
 ## Marking Scheme:
 
@@ -37,9 +37,10 @@ Submit the URL of your git repository [here](https://docs.google.com/forms/d/e/1
   | loadData |  10     |
   | printData |  5    |
   | Declaring the two ArrayLists |  5    |
-  | Drawing the product buttons | 20  |
+  | Displaying the products menu | 20  |
   | Clicking the products and adding to the bill | 20 |
-  | Drawing the bill | 20 |
+  | Displaying the bill | 20 |
   | Correct use of git | 10 |
+  | Total: | 100 |
 
   To get full marks for correct use of git, you must make at least 5 commits, so make a commit every time you get something working.
