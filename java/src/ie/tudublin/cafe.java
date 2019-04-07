@@ -11,6 +11,9 @@ public class cafe extends PApplet{
     ArrayList<Product> products = new ArrayList<Product>();
     ArrayList<Product> bill = new ArrayList<Product>();
 
+    // Processing variables
+    private float border = 60;
+
     // setting of the Processing window
     public void settings(){
         size(800, 600);
@@ -24,7 +27,8 @@ public class cafe extends PApplet{
 
     // will be called 60 per second 
     public void draw(){
-
+        displayProducts();
+        displayBill();
     }
 
     // load data into memory
@@ -50,6 +54,42 @@ public class cafe extends PApplet{
         for (Product product : products) {
             System.out.println(product);
         }
+    }
+
+    public void displayProducts(){
+
+        // center line
+        line(width / 2, border , width / 2, height - border);
+            
+        for (int i = 0; i < products.size(); i++) {
+            Product p = products.get(i);
+            float price = p.getPrice();
+            
+            // box
+            fill(255);
+            rect(border, map(i, 0, products.size(), border, height - border), (width / 3), 60);
+
+            // text in box
+            textAlign(LEFT, CENTER);
+            fill(0);
+            text(p.getName(), border + 10, map(i, 0, products.size(), border, height - border) + 30);
+
+            // text in box
+            textAlign(RIGHT, CENTER);
+            fill(0);
+            text(nfc(price, 2), (width / 3) + 50, map(i, 0, products.size(), border, height - border) + 30);
+
+        }
+
+    }
+
+    public void displayBill(){
+        fill(255);
+        rect(width / 2 + border, border, (width / 2) - border * 2, height - border * 2);
+
+        fill(0);
+        text("Your Bill", width * (3/4), border + 10);
+
     }
 
 }
